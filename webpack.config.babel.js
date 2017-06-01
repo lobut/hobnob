@@ -1,4 +1,5 @@
 import path from 'path';
+import webpack from 'webpack';
 
 const config = {
   entry: {
@@ -19,7 +20,15 @@ const config = {
       },
     ],
   },
-  plugins: [],
+  plugins: [      
+    new webpack.ProvidePlugin({
+      "React": "react",
+    }),
+    new webpack.ProvidePlugin({   
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery'
+    })],
 };
 
 export default config;

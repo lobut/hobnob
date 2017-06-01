@@ -21,7 +21,7 @@ app.get('*', (req, res) => {
   const context = {};
   markup = renderToString(
     <div>
-      <h1>Robert Face</h1>
+      <App />
     </div>
   );
 

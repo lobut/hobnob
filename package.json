@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "prestart": "webpack -p",
     "start": "nodemon --exec babel-node src/server.js"
   },
   "dependencies": {
@@ -11,11 +12,14 @@
     "babel-core": "^6.13.2",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
+    "bootstrap": "^3.3.7",
     "ejs": "^2.5.6",
     "express": "^4.14.1",
+    "jquery": "^3.2.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-router-dom": "^4.1.1"
+    "react-router-dom": "^4.1.1",
+    "styled-components": "^1.4.6"
   },
   "devDependencies": {
     "babel-loader": "^6.2.10",
